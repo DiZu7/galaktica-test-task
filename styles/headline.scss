@@ -1,0 +1,44 @@
+.headline {
+  &__content {
+    padding: 12px 16px 24px;
+  }
+
+  &__image {
+    width: 285px;
+    height: 285px;
+    margin: 0 auto 40px;
+  }
+
+  &__image img {
+    max-width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-family: 'Exo', sans-serif;
+    font-size: 28px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #313131;
+  }
+
+  &__description {
+    //  margin-bottom: 24px;
+
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #585858;
+  }
+
+  &__banner {
+    margin: auto;
+    padding: 13px 0;
+  }
+
+  &__banner img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-height: 162px;
+  }
+}

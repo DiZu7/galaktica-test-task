@@ -1,0 +1,46 @@
+.call-to-action {
+  padding: 40px 16px;
+
+  @include for-desktop {
+    padding: 64px 150px 96px;
+  }
+
+  &__content {
+    max-width: 1140px;
+    margin: auto;
+    padding: 44px 16px;
+    border-radius: 15px;
+    background-color: #7f3a6a;
+    color: #fff;
+    text-align: center;
+
+    @include for-desktop {
+      padding: 64px 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-family: 'Exo', sans-serif;
+    font-size: 28px;
+    line-height: 140%;
+    text-transform: capitalize;
+
+    @include for-desktop {
+      margin-bottom: 32px;
+      font-size: 44px;
+    }
+  }
+
+  &__description {
+    min-width: 194px;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0 auto 32px;
+  }
+
+  &__button {
+    width: 170px;
+    background-color: #e9a923;
+  }
+}

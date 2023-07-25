@@ -1,0 +1,77 @@
+.action-button {
+  width: 111px;
+  height: 48px;
+  background-color: #7f3a6a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.logo {
+  width: 146px;
+  height: 36px;
+
+  @include for-desktop {
+    width: 194px;
+    height: 48px;
+  }
+
+  & img {
+    width: 100%;
+  }
+}
+
+// .learn-more-btn {
+//   width: 158px;
+//   height: 48px;
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 13px;
+//   background-color: $text-color-white;
+//   color: $text-color-black;
+//   border: none;
+//   border-radius: 2px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+//     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+//   cursor: pointer;
+//   @include for-desktop {
+//   }
+// }
+
+// .customer-personality {
+//   display: flex;
+//   flex-direction: column;
+//   font-size: 16px;
+//   line-height: 22px;
+// }
+// .customer-personality__name {
+//   font-weight: 700;
+// }
+// .customer-personality__job-title {
+//   color: $text-color-light-grey;
+// }
+
+// .icon-arrow-right {
+//   display: block;
+//   background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
+//   width: 7px;
+//   height: 12px;
+// }
+
+// .hide_desktop {
+//   border-top: 1px solid $color-light-grey;
+//   @include for-desktop {
+//     display: none;
+//   }
+// }
+
+// .hide_mobile {
+//   display: none;
+//   @include for-desktop {
+//     display: block;
+//   }
+// }
