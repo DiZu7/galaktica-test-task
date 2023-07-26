@@ -34,7 +34,6 @@ html {
 .page {
   width: 100%;
   overflow: hidden;
-  
   @include for-desktop {
     max-width: 1440px;
     margin: auto;
