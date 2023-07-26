@@ -1,8 +1,8 @@
 .action-button {
   width: 111px;
   height: 48px;
-  background-color: #7f3a6a;
-  color: #fff;
+  background-color: $color-main;
+  color: $color-text-white;
   border: none;
   border-radius: 5px;
   font-weight: 700;
@@ -12,7 +12,7 @@
 }
 
 .logo {
-  width: 146px;
+  width: 145.5px;
   height: 36px;
 
   @include for-desktop {
@@ -21,57 +21,33 @@
   }
 
   & img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
-// .learn-more-btn {
-//   width: 158px;
-//   height: 48px;
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 13px;
-//   background-color: $text-color-white;
-//   color: $text-color-black;
-//   border: none;
-//   border-radius: 2px;
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-//     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-//   cursor: pointer;
-//   @include for-desktop {
-//   }
-// }
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 168px;
 
-// .customer-personality {
-//   display: flex;
-//   flex-direction: column;
-//   font-size: 16px;
-//   line-height: 22px;
-// }
-// .customer-personality__name {
-//   font-weight: 700;
-// }
-// .customer-personality__job-title {
-//   color: $text-color-light-grey;
-// }
+  @include for-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration: none;
+    color: $color-text-title;
+    text-transform: capitalize;
 
-// .icon-arrow-right {
-//   display: block;
-//   background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
-//   width: 7px;
-//   height: 12px;
-// }
-
-// .hide_desktop {
-//   border-top: 1px solid $color-light-grey;
-//   @include for-desktop {
-//     display: none;
-//   }
-// }
-
-// .hide_mobile {
-//   display: none;
-//   @include for-desktop {
-//     display: block;
-//   }
-// }
+    @include for-desktop {
+      height: 24px;
+      font-size: 16px;
+    }
+  }
+}

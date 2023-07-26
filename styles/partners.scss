@@ -1,5 +1,23 @@
 .partners {
+  display: flex;
+  flex-direction: column;
   padding: 40px 16px;
+
+  @include for-desktop {
+    padding: 75px 150px;
+    flex-direction: row;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include for-desktop {
+      flex: 1;
+      justify-content: center;
+      margin-right: 121px;
+    }
+  }
 
   &__title {
     margin-bottom: 40px;
@@ -8,25 +26,60 @@
     line-height: 140%;
     text-transform: capitalize;
     text-align: center;
-    color: #313131;
+    color: $color-text-title;
+
+    @include for-desktop {
+      font-size: 32px;
+    }
   }
 
   &__items {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 40px;
+
+    @include for-desktop {
+      align-items: center;
+    }
+  }
+
+  &__row_first {
+
+    @include for-desktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__row_second {
+
+    @include for-desktop {
+      display: flex;
+    }
   }
 
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 343px;
     height: 104px;
     margin-bottom: 20px;
+
     padding: 28px 0;
     border-radius: 10px;
     background-color: #f1e9ee;
+
+    @include for-desktop {
+      width: 267px;
+      height: 130px;
+      margin-bottom: 0;
+    }
+  }
+  &__row_second &__item:last-child {
+    margin-bottom: 0;
+
+    @include for-desktop {
+      margin-left: 24px;
+    }
   }
 
   &__item-img {
@@ -49,9 +102,15 @@
   }
 
   &__image {
-    width: 285px;
-    height: 285px;
-    margin: 20px auto 0;
+    align-self: center;
+
+    padding: 0 29px;
+    
+    @include for-desktop {
+      height: 461px;
+      width: 461px;
+      padding: 0;
+    }
   }
 
   &__image img {

@@ -1,44 +1,86 @@
 .headline {
+
+  @include for-desktop {
+    padding-top: 42px;
+  }
+
   &__content {
     padding: 12px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include for-desktop {
+      flex-direction: row;
+      width: 1141px;
+      margin: 0 auto 40px;
+      padding: 0;
+    }
   }
 
   &__image {
-    width: 285px;
-    height: 285px;
-    margin: 0 auto 40px;
+    margin-bottom: 40px;
+    padding: 0 29px;
+
+    @include for-desktop {
+      height: 461px;
+      width: 461px;
+      margin: 0 122px 0 0;
+      padding: 0;
+    }
   }
 
   &__image img {
     max-width: 100%;
   }
 
+  &__info {
+
+    @include for-desktop {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+    }
+  }
+
   &__title {
+    position: relative;
     margin-bottom: 24px;
     font-family: 'Exo', sans-serif;
     font-size: 28px;
     line-height: 140%;
     text-transform: capitalize;
-    color: #313131;
+    color: $color-text-title;
+
+    @include for-desktop {
+      font-size: 44px;
+    }
   }
 
   &__description {
-    //  margin-bottom: 24px;
-
     line-height: 150%;
     text-transform: capitalize;
-    color: #585858;
-  }
-
-  &__banner {
-    margin: auto;
-    padding: 13px 0;
+    color: $color-text-description;
   }
 
   &__banner img {
-    display: block;
-    margin: auto;
     width: 100%;
-    max-height: 162px;
+  }
+
+  &__banner-desk {
+    display: none;
+
+    @include for-desktop {
+      display: block;
+    }
+  }
+
+  &__banner-mob {
+    
+    @include for-desktop {
+      display: none;
+    }
   }
 }

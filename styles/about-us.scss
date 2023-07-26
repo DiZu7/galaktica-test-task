@@ -1,6 +1,10 @@
 .about-us {
   padding: 40px 16px;
 
+  @include for-desktop {
+    padding: 60px 150px;
+  }
+
   &__title {
     margin-bottom: 40px;
     font-family: 'Exo', sans-serif;
@@ -8,7 +12,32 @@
     line-height: 140%;
     text-transform: capitalize;
     text-align: center;
-    color: #313131;
+    color: $color-text-title;
+
+    @include for-desktop {
+      font-size: 32px;
+    }
+  }
+
+  &__infos {
+
+    @include for-desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__info {
+    margin-bottom: 24px;
+
+    @include for-desktop {
+      width: 485px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__info:last-child {
+    margin-bottom: 0;
   }
 
   &__subtitle {
@@ -18,13 +47,16 @@
     font-weight: 700;
     line-height: 140%;
     text-transform: capitalize;
-    color: #313131;
+    color: $color-text-title;
+
+    @include for-desktop {
+      font-size: 24px;
+    }
   }
 
   &__description {
-    margin-bottom: 24px;
     line-height: 150%;
-    color: #585858;
+    color: $color-text-description;
   }
   &__description:last-child {
     margin-bottom: 0;

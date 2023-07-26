@@ -1,28 +1,25 @@
-.nav {
+.footer {
+  padding: 64px 0 32px;
+  background-color: #f9f1ee;
   display: flex;
   flex-direction: column;
-  width: 168px;
+  align-items: center;
 
   @include for-desktop {
-    flex-direction: row;
-    width: 528px;
-    justify-content: space-between;
+    padding: 64px 150px;
   }
-  &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    font-size: 14px;
-    line-height: 150%;
-    text-decoration: none;
-    color: #313131;
-    text-transform: capitalize;
+  
+  &__logo {
+    margin-bottom: 24px;
+  }
 
-    @include for-desktop {
-      height: 24px;
-      font-size: 16px;
-    }
+  &__nav {
+    width: 528px;
+    margin-bottom: 28px;
+  }
+
+  &__social-media {
+    margin-bottom: 28px;
   }
 }
 
@@ -40,6 +37,7 @@
     width: 100%;
   }
 }
+
 .contacts {
   text-align: center;
 
@@ -49,7 +47,8 @@
     font-size: 14px;
     line-height: 140%;
     text-transform: capitalize;
-    color: #313131;
+    color: $color-text-title;
+
     @include for-desktop {
       margin-bottom: 12px;
       font-size: 16px;
@@ -58,34 +57,11 @@
 
   &__email {
     line-height: 150%;
-    color: #585858;
+    color: $color-text-description;
     font-size: 14px;
+
     @include for-desktop {
       font-size: 16px;
     }
-  }
-}
-
-.footer {
-  padding: 64px 0 32px;
-  background-color: #f9f1ee;
-  display: flex;
-  flex-direction: column;
-  //   justify-content: center;
-  align-items: center;
-
-  @include for-desktop {
-    padding: 64px 150px;
-  }
-  &__logo {
-    margin-bottom: 24px;
-  }
-
-  &__nav {
-    margin-bottom: 28px;
-  }
-
-  &__social-media {
-    margin-bottom: 28px;
   }
 }

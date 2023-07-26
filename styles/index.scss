@@ -28,26 +28,25 @@ button {
 
 html {
   font-size: 16px;
-  // font-family: 'Exo', sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
 
 .page {
   width: 100%;
+  overflow: hidden;
+  
   @include for-desktop {
-    //   display: flex;
-    // flex-direction: column;
     max-width: 1440px;
     margin: auto;
     min-height: 100vh;
   }
 }
 
-.top-section-wrapper {
-  position: absolute;
-  z-index: -1;
-  height: 1004px;
-  width: 100%;
-  background-image: url('../images/bg_mob 2.png');
+.top-section-container {
+  background-image: url('../images/bg_mob.png');
   background-size: cover;
+
+  @include for-desktop {
+    background-image: url('../images/bg_desktop.png');
+  }
 }
